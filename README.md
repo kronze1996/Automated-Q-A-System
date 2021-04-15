@@ -50,3 +50,14 @@ document and list down the top-N constituent words of the themes/topics.
 Extractive Question Answering is the task of extracting an answer from a text given a question. The
 text would essentially be the group of documents that have the highest concentration of the topic
 closest to the asked question.
+
+## 1.3 Scope of project
+A. The topic model should be able to identify/extract important topics.
+B. The topic model would be built on the corpus of Data Science documents.
+C. The topic model should yield the most relevant and stable topics measured through the
+perplexity score.
+D. Once the relevant documents have been retrieved, the extractive question answering
+model would generate the answer for the question.
+E. The entire dual-model pipeline would be deployed in AWS/GCP/Azure
+F. The dual-model pipeline must be accessible via a web application(Streamlit) for demo
+purpose.
