@@ -52,12 +52,9 @@ text would essentially be the group of documents that have the highest concentra
 closest to the asked question.
 
 ## 1.3 Scope of project
-A. The topic model should be able to identify/extract important topics.
-B. The topic model would be built on the corpus of Data Science documents.
-C. The topic model should yield the most relevant and stable topics measured through the
-perplexity score.
-D. Once the relevant documents have been retrieved, the extractive question answering
-model would generate the answer for the question.
-E. The entire dual-model pipeline would be deployed in AWS/GCP/Azure
-F. The dual-model pipeline must be accessible via a web application(Streamlit) for demo
-purpose.
+- The topic model should be able to identify/extract important topics.
+- The topic model would be built on the corpus of Data Science documents.
+- The topic model should yield the most relevant and stable topics measured through the perplexity score.
+- Once the relevant documents have been retrieved, the extractive question answering model would generate the answer for the question.
+- The entire dual-model pipeline would be deployed in AWS/GCP/Azure
+- The dual-model pipeline must be accessible via a web application(Streamlit) for demo purpose.
