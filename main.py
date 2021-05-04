@@ -1,8 +1,8 @@
 # import textCleaning
-import ir
-import datasetMaker
-import textCleaning
-import tf_IDF
+# import ir
+# import datasetMaker
+# import textCleaning
+# import tf_IDF
 import streamlit as st
 
 # Project Title
