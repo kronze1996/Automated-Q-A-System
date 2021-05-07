@@ -17,4 +17,5 @@ def get_closest_n(query, n, dictionary, index, tfidf, text_docs):
     sims = index[tfidf[query_bow]]
     top_idx = sims.argsort()[-1*n:][::-1]
     answer = [text_docs[i] for i in top_idx]
+    print([sims[i] for i in top_idx])
     return answer
