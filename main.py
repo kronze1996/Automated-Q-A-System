@@ -19,7 +19,7 @@ with header:
 # To fetch the query that is the question  
 question=st.text_input('Ask a question here:') 
 if question:
-  with open('C:/Users/karti/OneDrive/Documents/Automated_Q_A/clean_text.pkl', 'rb') as p:
+  with open('clean_text.pkl', 'rb') as p:
     new_docs = pickle.load(p)
   text_docs=[]    
   for ele in new_docs:
@@ -29,11 +29,11 @@ if question:
       pass
   # Loading all pickle files
   #dictionary, pdoc = ir.create_dictionary(raw_corpus)
-  with open('C:/Users/karti/OneDrive/Documents/Automated_Q_A/dictionary.pkl', 'rb') as p:
+  with open('dictionary.pkl', 'rb') as p:
     dictionary = pickle.load(p)
-  with open('C:/Users/karti/OneDrive/Documents/Automated_Q_A/index.pkl', 'rb') as p:
+  with open('index.pkl', 'rb') as p:
     index = pickle.load(p)
-  with open('C:/Users/karti/OneDrive/Documents/Automated_Q_A/tfidf.pkl', 'rb') as p:
+  with open('tfidf.pkl', 'rb') as p:
     tfidf = pickle.load(p)
   
   answer=[]
