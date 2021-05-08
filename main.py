@@ -29,6 +29,9 @@ if question:
       pass
   # Loading all pickle files
   #dictionary, pdoc = ir.create_dictionary(raw_corpus)
+  
+  with open('text_docs.pkl', 'rb') as p:
+    t_docs = pickle.load(p)
   with open('dictionary (1).pkl', 'rb') as p:
     dictionary = pickle.load(p)
   with open('index (1).pkl', 'rb') as p:
@@ -37,7 +40,7 @@ if question:
     tfidf = pickle.load(p)
   
   answer=[]
-  for d in tf_IDF.get_closest_n(question,5, dictionary, index, tfidf, text_docs):
+  for d in tf_IDF.get_closest_n(question,5, dictionary, index, tfidf, t_docs):
       answer.append(d)
   Answer=st.beta_container()
   with Answer:
