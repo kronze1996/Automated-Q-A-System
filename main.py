@@ -12,7 +12,7 @@ from gensim.parsing import strip_tags, strip_numeric, \
 import QuesAns
 
 # Project Title
-header= st.beta_container()
+header= st.container()
 with header:
     st.title("Welcome to Automated Q&A bot")
 
